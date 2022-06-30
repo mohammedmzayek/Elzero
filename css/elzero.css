@@ -102,7 +102,7 @@ ul {
        }
        .spikes{
         position: relative;
-       }
+        }
        .spikes::before{
         content: "";
         position: absolute;
@@ -127,6 +127,11 @@ ul {
       .dots-down{
         bottom: 200px;
         left: 0;
+      }
+      @media (max-width:1200px){
+        .dots{
+          display: none;
+        }
       }
 /* End Global Rules */
 /* Start Header */
@@ -1321,6 +1326,11 @@ max-width: 100%;
   min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
+}
+@media (max-width:767px){
+  .discount{
+    padding-bottom: 20px;
+  }
 }
 .discount .image {
   background-image: url(../imgs/discount-background1.jpg);
